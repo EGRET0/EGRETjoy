@@ -59,7 +59,7 @@
                 $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>BPM</th><th>Notes</th><th>Comment</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
-                for (var i = 0; i < info.length; i++) {
+                for (var i = 0; i < info.length+1; i++) {
                     if (x != info[i].level) {
                         if (obj_sep != null) {
                             obj_sep.html("<td colspan='6'>" + "<b>" + mark + x + " (" + count +
